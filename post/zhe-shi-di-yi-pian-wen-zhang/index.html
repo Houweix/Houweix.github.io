@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Gridea | houwei&#39; Gridea</title>
+<title>这是第一篇文章 | houwei&#39; Gridea</title>
 <meta name="description" content="不断前行">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -14,6 +14,12 @@
 <link rel="stylesheet" href="https://Houweix.github.io/styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
@@ -22,6 +28,7 @@
 
   </head>
   <body>
+  
     <nav class="navbar border fixed split-nav">
   <div class="nav-brand">
     <h3><a href="https://Houweix.github.io">houwei&#39; Gridea</a></h3>
@@ -78,40 +85,51 @@
     <div id="top" class="row site">
       <div class="sm-12 md-8 col">
         <div class="paper">
-          <h2 class="current-tag">标签: Gridea</h2>
-          
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://Houweix.github.io/post/zhe-shi-di-yi-pian-wen-zhang">这是第一篇文章</a>
-    </h2>
-    <p class="article-meta">
-      2019-04-17
-      
-        <a href="https://Houweix.github.io/tag/gridea" class="badge warning">
-          Gridea
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="https://Houweix.github.io/post/zhe-shi-di-yi-pian-wen-zhang" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
+          <article class="article">
+            <h1>这是第一篇文章</h1>
+            <p class="article-meta">
+              2019-04-17
+              
+                <a href="https://Houweix.github.io/tag/gridea" class="badge success">
+                  Gridea
+                </a>
+              
+            </p>
+            
+              <img src="https://Houweix.github.io/post-images/zhe-shi-di-yi-pian-wen-zhang.jpg" alt="这是第一篇文章">
+            
+            <div class="post-content">
+              <p>一直都想建立一个自己的博客记录日常和学习，这次遇见Gridea，搞了一下，希望大家多多支持~
+<img src="https://Houweix.github.io/post-images/1555492255687.png" alt=""></p>
 
-
+            </div>
+          </article>
         </div>
-        <div class="row flex-edges">
-  
-  
-</div>
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://Houweix.github.io/post/about">
+                <h3 class="post-title">
+                  关于
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
+          
+            <div class="paper" data-aos="fade-in">
+              <div id="gitalk-container"></div>
+            </div>
+          
 
+          
+        
       </div>
+
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
     <img src="https://Houweix.github.io/images/avatar.png?v=1555495264819" class="no-responsive avatar">
@@ -175,6 +193,7 @@
   </div>
 </div>
 
+
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -186,6 +205,29 @@ AOS.init();
 hljs.initHighlightingOnLoad()
 
 </script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'abc2f36254784c991959',
+        clientSecret: 'c08c88fe61838c8fe1c955098ba6e012cf5adae0',
+        repo: 'Houweix.github.io',
+        owner: 'Houweix',
+        admin: ['Houweix'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
